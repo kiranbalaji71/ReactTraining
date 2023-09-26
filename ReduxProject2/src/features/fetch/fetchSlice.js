@@ -16,19 +16,17 @@ const fetchSlice = createSlice({
   name: "itempost",
   initialState,
   reducers: {},
-  extraReducers: {
-    [getApiData.pending]: (state) => {
+  extraReducers: (builder) => {
+    builder.addCase(getApiData.pending, (state) => {
       state.isLoading = true;
-    },
-    [getApiData.fulfilled]: (state, action) => {
-      console.log("success");
+    });
+    builder.addCase(getApiData.fulfilled, (state, action) => {
       state.isLoading = false;
       state.item = action.payload;
-    },
-    [getApiData.rejected]: (state) => {
-      console.log("error");
+    });
+    builder.addCase(getApiData.rejected, (state) => {
       state.isLoading = false;
-    },
+    });
   },
 });
 

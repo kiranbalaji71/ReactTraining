@@ -6,6 +6,7 @@ import CreatePost from "./components/CreatePost";
 import ViewPost from "./components/ViewPost";
 import API from "./components/API";
 import ItemFetch from "./components/ItemFetch";
+import PropsPassing from "./components/PropsPassing";
 
 const Content = () => {
   return (
@@ -14,6 +15,7 @@ const Content = () => {
       <Route path="/output" element={<ViewPost />} />
       <Route path="/api" element={<API />} />
       <Route path="/fetch" element={<ItemFetch />} />
+      <Route path="/pass" element={<PropsPassing />} />
     </Routes>
   );
 };
@@ -54,6 +56,10 @@ function App() {
               {
                 label: "API",
                 key: "/fetch",
+              },
+              {
+                label: "Props",
+                key: "/pass",
               },
             ]}
           />

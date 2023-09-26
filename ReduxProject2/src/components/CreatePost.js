@@ -5,10 +5,10 @@ import { addPost } from "../features/post/postSlice";
 import useDate from "./useDate";
 
 const CreatePost = () => {
+  const dispatch = useDispatch();
   const [includeDate, setIncludeDate] = useState(false);
   const dateTime = useDate(includeDate);
   const [form] = Form.useForm();
-  const dispatch = useDispatch();
 
   const handleFinish = (value) => {
     console.log(value);

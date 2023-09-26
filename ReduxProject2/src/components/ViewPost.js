@@ -21,6 +21,7 @@ const ViewPost = () => {
             key={item.id}
             style={{ margin: "10px 0" }}
             title={item.input[0]}
+            hoverable
             extra={
               <Tooltip placement="left" title="Delete the post">
                 <Button
