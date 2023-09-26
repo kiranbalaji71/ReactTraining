@@ -1,0 +1,50 @@
+[
+  {
+    "name": "iPhone 13 Pro",
+    "description": "The iPhone 13 Pro is a flagship smartphone with a stunning Super Retina XDR display, powerful A15 Bionic chip, and advanced Pro camera system for exceptional photos and videos.",
+    "imageUrl": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iPhone-13-Pro_iPhone-13-Pro-Max_09142021_inline.jpg.large.jpg",
+    "price": 1099
+  },
+  {
+    "name": "iPad Pro (2023)",
+    "description": "Experience the future of productivity with the iPad Pro. Featuring the M2 chip, 120Hz ProMotion display, and compatibility with the Apple Pencil 3, it's the ultimate creative tool.",
+    "imageUrl": "https://www.apple.com/newsroom/images/product/ipad/standard/Apple-iPad-Pro-space-gray-2up-221018_big.jpg.large.jpg",
+    "price": 899
+  },
+  {
+    "name": "MacBook Pro (M2, 2023)",
+    "description": "The MacBook Pro sets new standards in performance and design. With the M2 Pro chip, mini-LED display, and enhanced keyboard, it's built for professionals who demand the best.",
+    "imageUrl": "https://www.apple.com/newsroom/images/product/mac/standard/Apple-MacBook-Pro-Motion-230117_big.jpg.large.jpg",
+    "price": 1999
+  },
+  {
+    "name": "AirPods Pro 2",
+    "description": "Immerse yourself in premium audio with the AirPods Pro 2. Featuring active noise cancellation, spatial audio, and a comfortable design, it's the ultimate wireless earbud experience.",
+    "imageUrl": "https://www.apple.com/v/airpods-pro/g/images/overview/case_closed__fn3wuwvygjau_large.jpg",
+    "price": 249
+  },
+  {
+    "name": "Apple Watch Series 7",
+    "description": "Stay connected and active with the Apple Watch Series 7. With a larger, always-on Retina display, advanced health features, and a range of stylish bands, it's your perfect fitness companion.",
+    "imageUrl": "https://www.apple.com/newsroom/images/product/watch/standard/Apple_watch-series7_hero_09142021_big.jpg.large.jpg",
+    "price": 399
+  },
+  {
+    "name": "Mac mini (M2, 2023)",
+    "description": "The M2 chip, which powers the Mac mini today, provides outstanding performance in a small package. It's an essential component on your desktop, whether you use it for work or play.",
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-mini-hero-202301?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1670038314708",
+    "price": 799
+  },
+  {
+    "name": "AirPods Max",
+    "description": "Elevate your audio experience with the AirPods Max. These over-ear headphones offer high-fidelity sound, active noise cancellation, and a luxurious design for immersive listening.",
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011_FMT_WHH?wid=607&hei=556&fmt=jpeg&qlt=90&.v=1633623988000",
+    "price": 549
+  },
+  {
+    "name": "iMac (M2, 2023)",
+    "description": "The iMac gets a colorful update and the power of the M2 chip. Enjoy a vibrant 24-inch 4.5K Retina display, improved performance, and a sleek design that enhances any workspace.",
+    "imageUrl": "https://www.apple.com/newsroom/images/product/imac/lifestyle/Apple-Mac-mini-ProRes-Video-230117_big.jpg.large.jpg",
+    "price": 1299
+  }
+]

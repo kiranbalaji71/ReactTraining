@@ -1,0 +1,123 @@
+[
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Alfa_Romeo_Giulia_at_IAA_%2818%29.JPG/400px-Alfa_Romeo_Giulia_at_IAA_%2818%29.JPG",
+    "title": "Alfa Romeo Giulia (952)",
+    "start_production": 2016,
+    "class": "Compact executive car",
+    "price": "$45,000",
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "horsepower": "Varies based on trim, ranging from around 280 to 505 horsepower."
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Audi_Q2_Genfer_Automobilsalon_2016.jpg/400px-Audi_Q2_Genfer_Automobilsalon_2016.jpg",
+    "title": "Audi Q2",
+    "start_production": 2016,
+    "class": "Compact SUV",
+    "price": "$35,000",
+    "fuel_type": "Gasoline or Diesel",
+    "transmission": "Manual or Automatic",
+    "horsepower": "Varies based on engine options, ranging from around 116 to 187 horsepower."
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/2016_BMW_7-Series_%28G11%29_sedan%2C_front_view.jpg/400px-2016_BMW_7-Series_%28G11%29_sedan%2C_front_view.jpg",
+    "title": "BMW 7 Series (G11)",
+    "start_production": 2015,
+    "class": "Full-size luxury car",
+    "price": "$80,000",
+    "fuel_type": "Gasoline or Plug-in Hybrid",
+    "transmission": "Automatic",
+    "horsepower": "Varies based on engine options, ranging from around 255 to 601 horsepower."
+  },
+
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Cadillac_CT6_04_2015.jpg/400px-Cadillac_CT6_04_2015.jpg",
+    "title": "Cadillac CT6",
+    "start_production": 2016,
+    "class": "Full-size luxury car",
+    "price": "$70,000",
+    "fuel_type": "Gasoline or Plug-in Hybrid",
+    "transmission": "Automatic",
+    "horsepower": "Varies based on engine options, ranging from around 237 to 500 horsepower."
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/%2716_Chevrolet_Camaro_Convertible_%28MIAS_%2716%29.jpg/400px-%2716_Chevrolet_Camaro_Convertible_%28MIAS_%2716%29.jpg",
+    "title": "Chevrolet Camaro",
+    "start_production": 2015,
+    "class": "Pony car Muscle car",
+    "price": "$40,000",
+    "fuel_type": "Gasoline",
+    "transmission": "Manual or Automatic",
+    "horsepower": "Varies based on engine options, ranging from around 275 to 650 horsepower."
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/MG_GS_01_China_2015-04-08.jpg/400px-MG_GS_01_China_2015-04-08.jpg",
+    "title": "MG GS",
+    "start_production": 2015,
+    "class": "Compact SUV",
+    "price": "$28,000",
+    "fuel_type": "Gasoline",
+    "transmission": "Manual or Automatic",
+    "horsepower": "Varies based on engine options, ranging from around 166 to 221 horsepower."
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Mahindra_TUV_300_Chennai_2016_%282%29.JPG/400px-Mahindra_TUV_300_Chennai_2016_%282%29.JPG",
+    "title": "Mahindra TUV300",
+    "start_production": 2015,
+    "class": "Mini sport utility vehicle",
+    "price": "$22,000",
+    "fuel_type": "Diesel",
+    "transmission": "Manual or Automated Manual Transmission (AMT)",
+    "horsepower": "Around 100 horsepower."
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Renault_Kadjar_front.jpg/400px-Renault_Kadjar_front.jpg",
+    "title": "Renault Kadjar",
+    "start_production": 2015,
+    "class": "Compact SUV",
+    "price": "$30,000",
+    "fuel_type": "Gasoline or Diesel",
+    "transmission": "Manual or Automatic",
+    "horsepower": "Varies based on engine options, ranging from around 113 to 163 horsepower."
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/2023_Renault_Kwid_Iconic_%28Colombia%29_front_view_01.png/320px-2023_Renault_Kwid_Iconic_%28Colombia%29_front_view_01.png",
+    "title": "Renault Kwid",
+    "start_production": 2015,
+    "class": "Entry-level crossover",
+    "price": "$15,000",
+    "fuel_type": "Gasoline",
+    "transmission": "Manual or Automatic (AMT)",
+    "horsepower": "Around 53 to 68 horsepower."
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Renault_Talisman.jpg/400px-Renault_Talisman.jpg",
+    "title": "Renault Talisman",
+    "start_production": 2015,
+    "class": "Large family car",
+    "price": "$40,000",
+    "fuel_type": "Gasoline or Diesel",
+    "transmission": "Manual or Automatic",
+    "horsepower": "Varies based on engine options, ranging from around 108 to 237 horsepower."
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Tata_Nano_-_GenX_01.JPG/400px-Tata_Nano_-_GenX_01.JPG",
+    "title": "Tata GenX Nano",
+    "start_production": 2015,
+    "class": "City car",
+    "price": "$8,000",
+    "fuel_type": "Gasoline",
+    "transmission": "Manual or Automatic (AMT)",
+    "horsepower": "Around 37 horsepower."
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/2016_Volvo_S90_Inscription_fr.jpg/400px-2016_Volvo_S90_Inscription_fr.jpg",
+    "title": "Volvo S90",
+    "start_production": 2016,
+    "class": "Executive car",
+    "price": "$65,000",
+    "fuel_type": "Gasoline or Plug-in Hybrid",
+    "transmission": "Automatic",
+    "horsepower": "Varies based on engine options, ranging from around 250 to 316 horsepower."
+  }
+]

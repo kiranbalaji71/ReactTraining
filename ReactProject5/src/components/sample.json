@@ -1,0 +1,26 @@
+[
+  {
+    "name": "iPhone 13 Pro",
+    "description": "The iPhone 13 Pro is a flagship smartphone with a stunning Super Retina XDR display, powerful A15 Bionic chip, and advanced Pro camera system for exceptional photos and videos.",
+    "imageUrl": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iPhone-13-Pro_iPhone-13-Pro-Max_09142021_inline.jpg.large.jpg",
+    "price": 1099
+  },
+  {
+    "name": "MacBook Pro M2",
+    "description": "The MacBook Pro sets new standards in performance and design. With the M2 Pro chip, mini-LED display, and enhanced keyboard, it's built for professionals who demand the best.",
+    "imageUrl": "https://www.apple.com/newsroom/images/product/mac/standard/Apple-MacBook-Pro-Motion-230117_big.jpg.large.jpg",
+    "price": 1999
+  },
+  {
+    "name": "Apple Watch Series 7",
+    "description": "Stay connected and active with the Apple Watch Series 7. With a larger, always-on Retina display, advanced health features, and a range of stylish bands, it's your perfect fitness companion.",
+    "imageUrl": "https://www.apple.com/newsroom/images/product/watch/standard/Apple_watch-series7_hero_09142021_big.jpg.large.jpg",
+    "price": 399
+  },
+  {
+    "name": "AirPods Max",
+    "description": "Elevate your audio experience with the AirPods Max. These over-ear headphones offer high-fidelity sound, active noise cancellation, and a luxurious design for immersive listening.",
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011_FMT_WHH?wid=607&hei=556&fmt=jpeg&qlt=90&.v=1633623988000",
+    "price": 549
+  }
+]

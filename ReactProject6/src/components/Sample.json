@@ -1,0 +1,82 @@
+[
+  {
+    "id": 0,
+    "jobTitleName": "Software Engineer",
+    "fullName": "Romin Irani",
+    "region": "CA",
+    "phoneNumber": "408-1234567",
+    "emailAddress": "romin.k.irani@gmail.com"
+  },
+  {
+    "id": 1,
+    "jobTitleName": "Software Engineer",
+    "fullName": "Neil Irani",
+    "region": "CA",
+    "phoneNumber": "408-1111111",
+    "emailAddress": "neilrirani@gmail.com"
+  },
+  {
+    "id": 2,
+    "jobTitleName": "UI/UX Designer",
+    "fullName": "Tom Hanks",
+    "region": "CA",
+    "phoneNumber": "408-2222222",
+    "emailAddress": "tomhanks@gmail.com"
+  },
+  {
+    "id": 3,
+    "jobTitleName": "UI/UX Designer",
+    "fullName": "Alice Johnson",
+    "region": "NY",
+    "phoneNumber": "212-5555555",
+    "emailAddress": "alice.johnson@example.com"
+  },
+  {
+    "id": 4,
+    "jobTitleName": "Product Manager",
+    "fullName": "John Smith",
+    "region": "TX",
+    "phoneNumber": "512-7777777",
+    "emailAddress": "john.smith@example.com"
+  },
+  {
+    "id": 5,
+    "jobTitleName": "QA Engineer",
+    "fullName": "Emily Brown",
+    "region": "CA",
+    "phoneNumber": "408-3333333",
+    "emailAddress": "emily.brown@example.com"
+  },
+  {
+    "id": 6,
+    "jobTitleName": "QA Engineer",
+    "fullName": "David Lee",
+    "region": "NY",
+    "phoneNumber": "212-6666666",
+    "emailAddress": "david.lee@example.com"
+  },
+  {
+    "id": 7,
+    "jobTitleName": "Product Manager",
+    "fullName": "Sarah White",
+    "region": "TX",
+    "phoneNumber": "512-8888888",
+    "emailAddress": "sarah.white@example.com"
+  },
+  {
+    "id": 8,
+    "jobTitleName": "Software Engineer",
+    "fullName": "Michael Davis",
+    "region": "CA",
+    "phoneNumber": "408-4444444",
+    "emailAddress": "michael.davis@example.com"
+  },
+  {
+    "id": 9,
+    "jobTitleName": "UI/UX Designer",
+    "fullName": "Linda Wilson",
+    "region": "NY",
+    "phoneNumber": "212-7777777",
+    "emailAddress": "linda.wilson@example.com"
+  }
+]
