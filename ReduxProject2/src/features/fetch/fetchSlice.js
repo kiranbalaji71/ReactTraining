@@ -1,15 +1,24 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import {
+  createSlice,
+  createAsyncThunk,
+  createEntityAdapter,
+} from "@reduxjs/toolkit";
+import axios from "axios";
 
 const url = "https://course-api.com/react-useReducer-cart-project";
 
-const initialState = {
-  item: [],
-  isLoading: false,
-};
-
 export const getApiData = createAsyncThunk("itempost/getApiData", async () => {
-  const res = await fetch(url);
-  return res.json();
+  const res = await axios.get(url);
+  return res.data;
+});
+
+const itemAdapter = createEntityAdapter({
+  selectId: (item) => item.id,
+});
+
+const initialState = itemAdapter.getInitialState({
+  isLoading: "idle",
+  error: null,
 });
 
 const fetchSlice = createSlice({
@@ -18,16 +27,19 @@ const fetchSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder.addCase(getApiData.pending, (state) => {
-      state.isLoading = true;
+      state.isLoading = "loading";
     });
     builder.addCase(getApiData.fulfilled, (state, action) => {
-      state.isLoading = false;
-      state.item = action.payload;
+      state.isLoading = "success";
+      itemAdapter.setAll(state, action.payload);
     });
-    builder.addCase(getApiData.rejected, (state) => {
-      state.isLoading = false;
+    builder.addCase(getApiData.rejected, (state, action) => {
+      state.isLoading = "failed";
+      state.error = action.error.message;
     });
   },
 });
+
+export const itemSelectors = itemAdapter.getSelectors((state) => state.fetch);
 
 export default fetchSlice.reducer;
