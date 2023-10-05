@@ -1,125 +1,70 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import { PrivateAxios } from "../API/Axios";
 import { Button, Layout, Typography, theme, Form, Space } from "antd";
 import AddForm from "./AddForm";
 import DisplayTable from "./DisplayTable";
+import { PlusOutlined } from "@ant-design/icons";
 
-const Dashboard = ({ url }) => {
+const Dashboard = () => {
   const [message, setMessage] = useState([]);
   const [update, setUpdate] = useState([]);
   const [showModal, setShowModal] = useState(false);
-  const [accessToken, setAccessToken] = useState("");
-
   const [form] = Form.useForm();
-  const refreshToken = JSON.parse(localStorage.getItem("refreshToken"));
 
   const {
     token: { colorBgContainer },
   } = theme.useToken();
 
-  const refresh = async () => {
-    let config = {
-      method: "get",
-      url: `${url}/user/refresh`,
-      headers: {
-        Authorization: `Bearer ${refreshToken}`,
-      },
-    };
-    try {
-      const response = await axios.request(config);
-      setAccessToken(response.data["new access"]);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
   const AddProduct = async (value) => {
-    let config = {
-      method: "post",
-      url: `${url}/add`,
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-      data: {
+    try {
+      const response = await PrivateAxios.post("/add", {
         name: value.name,
         price: value.price,
         qty: value.qty,
         description: value.description,
-      },
-    };
-    try {
-      const response = await axios.request(config);
+      });
       setUpdate(response.data.data);
-      console.log(response.data);
       form.resetFields();
     } catch (err) {
       console.log(err);
-      refresh();
     }
   };
 
-  const deleteProduct = (id) => {
-    let config = {
-      method: "delete",
-      url: `${url}/delete/${id}`,
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-    };
+  const deleteProduct = async (id) => {
     try {
-      const response = axios.request(config);
+      const response = await PrivateAxios.delete(`/delete/${id}`);
       setUpdate(response.data.data);
     } catch (err) {
       console.log(err);
-      refresh();
     }
   };
 
-  const updateProduct = (id, value) => {
-    let config = {
-      method: "put",
-      url: `${url}/update/${id}`,
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-      data: {
+  const updateProduct = async (id, value) => {
+    try {
+      const response = await PrivateAxios.put(`/update/${id}`, {
         name: value.name,
         price: value.price,
         qty: value.qty,
         description: value.description,
-      },
-    };
-    try {
-      const response = axios.request(config);
+      });
       setUpdate(response.data.data);
     } catch (err) {
       console.log(err);
-      refresh();
     }
   };
 
   useEffect(() => {
-    let config = {
-      method: "get",
-      url: `${url}/getall`,
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-    };
-
     const Product = async () => {
       try {
-        const response = await axios.request(config);
+        const response = await PrivateAxios.get("/getall");
         setMessage(response.data.data);
-        console.log(response.data);
       } catch (err) {
         console.log(err);
-        refresh();
       }
     };
 
     Product();
-  }, [accessToken, update]);
+  }, [update]);
 
   return (
     <Layout className="Layout">
@@ -130,12 +75,12 @@ const Dashboard = ({ url }) => {
         <Typography.Title level={3}>Dashboard</Typography.Title>
         <Space>
           <Button type="primary" onClick={() => setShowModal(true)}>
-            Add
+            <PlusOutlined /> Add
           </Button>
           <Button
             href="/signin"
             danger
-            onClick={() => localStorage.removeItem("login")}
+            onClick={() => localStorage.removeItem("refreshToken")}
           >
             Logout
           </Button>

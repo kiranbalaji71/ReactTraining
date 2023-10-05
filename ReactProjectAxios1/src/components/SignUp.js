@@ -1,17 +1,21 @@
 import React from "react";
-import axios from "axios";
-import { Form, Input, Typography, Button } from "antd";
+import axios from "../API/Axios";
+import { Form, Input, Typography, Button, message } from "antd";
 
-const SignUp = ({ url }) => {
+const SignUp = () => {
   const [form] = Form.useForm();
   const register = async (value) => {
     try {
-      const response = await axios.post(url + "/user/register", {
+      const response = await axios.post("/user/register", {
         username: value.username,
         email: value.email,
         password: value.password,
       });
-      console.log(response.data);
+      if (response.data.msg) {
+        message.error(response.data.msg);
+      } else {
+        message.success("successfully account register");
+      }
       form.resetFields();
     } catch (err) {
       console.log(err);

@@ -1,27 +1,29 @@
 import React from "react";
-import axios from "axios";
-import { Form, Input, Typography, Button } from "antd";
+import axios from "../API/Axios";
+import { Form, Input, Typography, Button, message } from "antd";
 import { useNavigate } from "react-router-dom";
 
-const SignIn = ({ url }) => {
+const SignIn = () => {
   const [form] = Form.useForm();
   const navigate = useNavigate();
 
   const login = async (value) => {
     try {
-      const response = await axios.post(url + "/user/login", {
+      const response = await axios.post("/user/login", {
         email: value.email,
         password: value.password,
       });
-      console.log(response.data);
-
-      localStorage.setItem(
-        "refreshToken",
-        JSON.stringify(response.data.user["refresh"])
-      );
-      form.resetFields();
-      localStorage.setItem("login", "true");
-      navigate("/");
+      if (response.data.message) {
+        message.error(response.data.message);
+      } else {
+        message.success(`Hello ${response.data.user["username"]}`);
+        localStorage.setItem(
+          "refreshToken",
+          JSON.stringify(response.data.user["refresh"])
+        );
+        form.resetFields();
+        navigate("/");
+      }
     } catch (err) {
       console.log(err);
     }

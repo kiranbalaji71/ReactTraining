@@ -32,13 +32,3 @@ code {
   padding: 24px;
   margin: 0;
 }
-
-.Layout .Content .Container {
-  display: flex;
-  flex-direction: row;
-}
-
-.Layout .Content .Container .SubContainer {
-  width: 50%;
-  padding: 20px;
-}

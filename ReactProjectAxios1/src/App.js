@@ -6,16 +6,14 @@ import Dashboard from "./components/Dashboard";
 import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
-  const url = "http://127.0.0.1:5000";
-
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<PrivateRoute />}>
-          <Route path="/" element={<Dashboard url={url} />} />
+          <Route path="/" element={<Dashboard />} />
         </Route>
-        <Route path="/signup" element={<SignUp url={url} />} />
-        <Route path="/signin" element={<SignIn url={url} />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
     </BrowserRouter>
   );

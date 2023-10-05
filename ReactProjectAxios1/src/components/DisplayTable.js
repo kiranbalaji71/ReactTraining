@@ -18,7 +18,7 @@ const DisplayTable = ({ message, deleteProduct, updateProduct }) => {
     });
   };
 
-  const cols = [
+  const columns = [
     {
       title: "Name",
       dataIndex: "name",
@@ -58,7 +58,12 @@ const DisplayTable = ({ message, deleteProduct, updateProduct }) => {
 
   return (
     <div>
-      <Table dataSource={message} columns={cols} pagination={{ pageSize: 6 }} />
+      <Table
+        dataSource={message}
+        columns={columns}
+        pagination={{ pageSize: 6 }}
+        rowKey={(item) => item.id}
+      />
       <Modal
         title="Update Data"
         open={isModalOpen}
