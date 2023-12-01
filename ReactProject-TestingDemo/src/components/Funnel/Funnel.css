@@ -1,0 +1,194 @@
+.funnelStructure {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.funnelStructureHeader .heading {
+  color: #095c37;
+  text-align: center;
+  font-family: Fraunces, serif;
+  font-size: 30px;
+  letter-spacing: -0.6px;
+}
+
+.funnelStructureCol1 span {
+  color: #667085;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  line-height: 20px;
+}
+
+.funnelStructureCol2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.funnelStructureCol2 .cardAlign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.funnelStructureCol2 .cardAlign .funnelCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.funnelStructureCol2 .cardAlign .ant-card {
+  width: 240px;
+  height: 160px;
+  border-radius: 12px;
+}
+
+.funnelStructureCol2 .cardAlign .ant-card-body {
+  padding: 0;
+}
+
+.nextAlign {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+}
+
+.nextAlign .nextButton {
+  width: 184px;
+  height: 100%;
+  background: #099250;
+  border-radius: 4px;
+}
+
+.nextAlign .nextButton:not(:disabled):not(.ant-btn-disabled):hover {
+  background: #099250;
+  opacity: 0.7;
+}
+
+.funnelStructureCol3 {
+  width: 80%;
+  margin: auto;
+}
+
+.funnelOption {
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+  width: 100%;
+}
+
+.funnelOption .boxRow {
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  width: 100%;
+  margin: 0 auto;
+  column-gap: 24px;
+  row-gap: 16px;
+}
+
+.funnelOption .boxColumn {
+  height: 48px;
+}
+
+.funnelOption .boxColumn .moreOptionButton,
+.funnelOption .boxColumn .optionButtonActive,
+.funnelOption .boxColumn .optionButton {
+  height: 100%;
+  padding: 0 8px;
+  border-radius: 8px;
+}
+
+.funnelOption .boxColumn .optionButton span,
+.funnelOption .boxColumn .optionButtonActive span,
+.funnelOption .boxColumn .moreOptionButton span {
+  color: #1d2939;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.funnelOption .boxColumn .optionButton {
+  background: #eaecf0;
+  border: none;
+}
+
+.funnelOption .boxColumn .optionButtonActive {
+  border: 1px solid #099250;
+  background: #d3f8df;
+}
+
+.funnelOption
+  .boxColumn
+  .optionButtonActive:not(:disabled):not(.ant-btn-disabled):hover {
+  color: #1d2939;
+  border: 1px solid #099250;
+  background: #d3f8df;
+}
+
+.funnelOption .boxColumn .moreOptionButton {
+  background: #eaecf0;
+  border: 1px solid #1d2939;
+}
+
+.funnelOption
+  .boxColumn
+  .moreOptionButton:not(:disabled):not(.ant-btn-disabled):hover {
+  color: #1d2939;
+  border: 1px solid #1d2939;
+}
+
+.funnelDivider {
+  width: 80%;
+  min-width: 80%;
+  margin: 0;
+}
+
+.funnelStructureFooter .footer {
+  color: #667085;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.funnelStructureFooter .footer span {
+  color: #099250;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .funnelStructureCol2 .cardAlign {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .funnelStructureCol2 .cardAlign {
+    flex-direction: column;
+  }
+  .funnelStructure {
+    padding: 40px 24px;
+  }
+  .funnelOption .boxRow {
+    grid-template-columns: 46% 46%;
+    width: 100%;
+  }
+  .funnelDivider {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 525px) {
+  .funnelOption .boxRow {
+    grid-template-columns: 100%;
+    width: 100%;
+  }
+}

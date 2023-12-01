@@ -1,0 +1,174 @@
+.main {
+  padding: 24px 16px;
+  gap: 10px;
+}
+
+.selfAssessment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  align-self: stretch;
+}
+
+.selfAssessmentCol1 {
+  display: flex;
+  width: 520px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.selfAssessmentCol1 .writePad {
+  align-items: center;
+}
+
+.selfAssessmentCol1 .heading {
+  color: #095c37;
+  font-family: Fraunces, serif;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: -0.48px;
+}
+
+.selfAssessmentCol1 span {
+  color: #1d2939;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.selfAssessmentCol2 {
+  display: flex;
+  padding: 12px;
+  width: 100%;
+  height: 56px;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+  background: #eaecf0;
+}
+
+.selfAssessmentCol2 .paragraph {
+  color: #475467;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.selfAssessmentCol2 .paragraph span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.selfAssessmentCol3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.selfAssessmentCol3 .assessmentCard {
+  display: flex;
+  flex-direction: row;
+  font-family: Inter, sans-serif;
+}
+
+.selfAssessmentCol3 .assessmentCard .symptoms {
+  flex: 1;
+}
+
+.selfAssessmentCol3 .assessmentCard .symptoms .symptomsButton {
+  height: 100%;
+  width: 175px;
+  background-color: #099250;
+  opacity: 0.6;
+  border-radius: 4px 0 0 4px;
+}
+
+.selfAssessmentCol3 .assessmentCard .symptoms .symptomsButton span {
+  text-align: center;
+  font-weight: 600;
+}
+
+.selfAssessmentCol3 .assessmentCard .symptoms .symptomsButton:hover {
+  background-color: #099250;
+  opacity: 0.6;
+}
+
+.selfAssessmentCol3 .assessmentCard .assessmentDates {
+  flex: 2;
+  padding: 8px;
+  border-radius: 0px 4px 4px 0px;
+  border: 1px solid #eaecf0;
+  background: #fff;
+}
+
+.selfAssessmentCol3 .assessmentCard .assessmentDates .paragraph {
+  color: #1d2939;
+  font-family: Inter, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.selfAssessmentCol3 .assessmentCard .assessmentDates .paragraph span {
+  color: #1570ef;
+  font-weight: 500;
+}
+
+.selfAssessmentCol3 .assessmentCard .assessmentDates .divider {
+  margin: 0;
+}
+
+.selfAssessmentCol3 .initialSymptoms {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.selfAssessmentCol3 .initialSymptoms .initialButton {
+  width: 184px;
+  background-color: #099250;
+}
+
+.selfAssessmentCol3 .initialSymptoms .initialButton:hover {
+  background-color: #099250;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 768px) {
+  .selfAssessmentCol1 {
+    width: 90%;
+  }
+
+  .selfAssessmentCol2 {
+    padding: 12px;
+  }
+
+  .selfAssessmentCol3 .assessmentCard {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .selfAssessmentCol3 .assessmentCard .symptoms .symptomsButton {
+    height: 50px;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .selfAssessmentCol3 .assessmentCard .assessmentDates {
+    flex: 1;
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .selfAssessmentCol2 {
+    height: auto;
+  }
+}

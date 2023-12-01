@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.verticalLine {
+  height: auto;
+  width: 1px;
+  background-color: #aaa;
+}
+
+.App {
+  margin: 2vh;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textPad {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.medicalForm {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.tagInput {
+  display: flex;
+  overflow-x: auto;
+  padding: 4px 11px;
+  border: 1px #ddd solid;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.tagInput .input {
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* Scrollbar
+
+.notificationList {
+  padding: 1%;
+  width: 100%;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.chatList {
+  height: 153px;
+  overflow-y: scroll;
+}
+
+.notificationList::-webkit-scrollbar,
+.chatList::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.notificationList::-webkit-scrollbar-track,
+.chatList::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.notificationList::-webkit-scrollbar-thumb,
+.chatList::-webkit-scrollbar-thumb {
+  background-color: #cacaca;
+} */
+
+/* Menu & Layout */
+
+.ant-menu .ant-menu-item-selected {
+  color: #118e44;
+  background-color: #e6ffe8;
+  border-bottom: 2px solid #118e44;
+  border-radius: 0;
+}
+
+.ant-layout .ant-layout-sider-trigger {
+  color: #333;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.sider {
+  border-right: 1px solid #cacaca;
+}
+
+.ant-layout-header {
+  padding: 0 1%;
+  border-bottom: 1px solid #cacaca;
+}
+
+.ant-layout-header h2 {
+  margin: 0.2em 0;
+  color: #118e44;
+}
+
+.content {
+  min-height: 90vh;
+}
+
+.ant-menu.ant-menu-root.ant-menu-inline,
+.ant-menu.ant-menu-root.ant-menu-vertical {
+  border-inline-end: none;
+}
+
+:where(.css-dev-only-do-not-override-pr0fja).ant-menu-light
+  .ant-menu-submenu-selected
+  > .ant-menu-submenu-title {
+  color: #118e44;
+}
+
+/* PopOver */
+
+:where(.css-dev-only-do-not-override-pr0fja).ant-popover .ant-popover-title {
+  min-width: 177px;
+  margin-bottom: 0;
+  color: #118e44;
+  font-weight: 600;
+}
+
+.ant-popover .ant-popover-inner {
+  padding: 0;
+}
+
+/* List */
+
+/* :where(.css-dev-only-do-not-override-pr0fja).ant-list .ant-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 0;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.notificationFooter {
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0 0 1%;
+} */
+
+/* Typography */
+
+/* h5:where(.css-dev-only-do-not-override-pr0fja).ant-typography,
+:where(.css-dev-only-do-not-override-pr0fja).ant-typography h5 {
+  margin: 0.2rem auto;
+}
+
+div:where(.css-dev-only-do-not-override-pr0fja).ant-typography,
+:where(.css-dev-only-do-not-override-pr0fja).ant-typography p {
+  margin-bottom: 0.2rem;
+} */
+
+/* Buttons */
+
+/* :where(.css-dev-only-do-not-override-pr0fja).messageButton,
+:where(.css-dev-only-do-not-override-pr0fja).floatButton {
+  color: #fff;
+  background-color: #118e44;
+}
+
+:where(.css-dev-only-do-not-override-pr0fja).askButton {
+  color: #fff;
+  background-color: #118e44;
+  margin-top: 1.5em;
+} */
+.startButton {
+  background-color: #118e44;
+}
+
+.stopButton {
+  background-color: #ff4d4f;
+}
+
+/* :where(.css-dev-only-do-not-override-pr0fja).messageButton:not(:disabled):not(
+    .ant-btn-disabled
+  ):hover,
+:where(.css-dev-only-do-not-override-pr0fja).floatButton:not(:disabled):not(
+    .ant-btn-disabled
+  ):hover,
+:where(.css-dev-only-do-not-override-pr0fja).askButton:not(:disabled):not(
+    .ant-btn-disabled
+  ):hover {
+  background-color: #27ad51;
+} */
+
+:where(.css-dev-only-do-not-override-pr0fja).startButton:not(:disabled):not(
+    .ant-btn-disabled
+  ):hover {
+  background-color: #27ad51;
+}
+
+:where(.css-dev-only-do-not-override-pr0fja).stopButton:not(:disabled):not(
+    .ant-btn-disabled
+  ):hover {
+  background-color: #f56668;
+}
+
+/* :where(.css-dev-only-do-not-override-pr0fja).moreNotificationsButton:not(
+    :disabled
+  ):not(.ant-btn-disabled):hover {
+  color: #118e44;
+  border-color: #118e44;
+} */
+
+/* Responsive Design */
+
+@media (max-width: 978px) {
+  .App {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .verticalLine {
+    height: 1px;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    min-height: 100%;
+  }
+}

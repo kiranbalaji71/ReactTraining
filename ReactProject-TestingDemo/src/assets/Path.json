@@ -1,0 +1,14 @@
+[
+  {
+    "msgPath": "pdf",
+    "redirectPath": "/pdf"
+  },
+  {
+    "msgPath": "joinnow",
+    "redirectPath": "/appointment"
+  },
+  {
+    "msgPath": "prescription",
+    "redirectPath": "/patient"
+  }
+]

@@ -1,0 +1,109 @@
+/* Tab */
+.jsonTab {
+  margin: 0 1%;
+}
+
+.jsonTab .ant-tabs .ant-tabs-tab {
+  padding: 6px 12px;
+}
+
+.jsonTab .ant-tabs .ant-tabs-tab {
+  margin: 0;
+}
+
+.jsonTab .ant-tabs .ant-tabs-nav {
+  margin: 0;
+}
+.jsonTab .ant-tabs .ant-tabs-nav .ant-tabs-nav-wrap {
+  background-color: #dddddd;
+}
+
+.jsonTab .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #000000;
+  text-align: center;
+}
+
+.jsonTab .ant-tabs .ant-tabs-ink-bar {
+  background: #118e44;
+}
+
+/* Main Content */
+.jsonContent {
+  display: flex;
+  flex-direction: row;
+}
+
+/* JSON Output*/
+.jsonOutput {
+  flex: 3;
+  margin: 1%;
+  border: 1px solid #dddddd;
+  border-radius: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form */
+.jsonForm {
+  flex: 1;
+  margin: 1%;
+}
+
+.jsonForm .ant-form-item {
+  margin: 0 0 3%;
+}
+
+.jsonForm .ant-form-item-label .ant-form-item-required {
+  font-size: 13px;
+  color: #999999;
+}
+
+.jsonForm
+  .ant-form-item
+  .ant-form-item-label
+  .ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  display: none;
+  margin: 0;
+}
+
+.jsonForm
+  .ant-form-item
+  .ant-form-item-label
+  .ant-form-item-required:not(.ant-form-item-required-mark-optional)::after {
+  visibility: visible;
+  content: "*";
+  margin: 4px;
+  color: #999999;
+}
+
+.jsonForm .ant-form-item-label,
+.jsonForm .ant-col-24.ant-form-item-label,
+.jsonForm .ant-col-xl-24.ant-form-item-label {
+  padding: 0;
+}
+
+.jsonForm .ant-input,
+.jsonForm .ant-input-number .ant-input-number-input {
+  padding: 8px 11px;
+  resize: none;
+}
+
+/* Button */
+.submitButton {
+  background-color: #118e44;
+}
+
+.submitButton:hover {
+  background-color: #27ad51;
+}
+
+@media (max-width: 500px) {
+  .jsonContent {
+    flex-direction: column;
+    padding: 0;
+  }
+  .jsonOutput {
+    min-height: 100vw;
+  }
+}

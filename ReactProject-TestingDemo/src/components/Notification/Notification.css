@@ -1,0 +1,66 @@
+/* Scrollbar */
+.notificationList {
+  padding: 1%;
+  width: 100%;
+  height: 90vh;
+  overflow-y: auto;
+}
+
+.notificationList::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.notificationList::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.notificationList::-webkit-scrollbar-thumb {
+  background-color: #cacaca;
+}
+
+/* PopOver */
+:where(.css-dev-only-do-not-override-pr0fja).ant-popover .ant-popover-title {
+  margin-bottom: 0;
+  color: #118e44;
+}
+
+/* List */
+:where(.css-dev-only-do-not-override-pr0fja).ant-list .ant-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 0;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.notificationFooter {
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  padding: 0 0 1%;
+}
+
+/* Button */
+.floatButton {
+  color: #fff;
+  background-color: #118e44;
+}
+.floatButton:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: #27ad51;
+}
+
+.moreNotificationsButton:not(:disabled):not(.ant-btn-disabled):hover {
+  color: #118e44;
+  border-color: #118e44;
+}
+
+/* Typography */
+/* h5:where(.css-dev-only-do-not-override-pr0fja).ant-typography,
+:where(.css-dev-only-do-not-override-pr0fja).ant-typography h5 {
+  margin: 0.2rem auto;
+}
+
+div:where(.css-dev-only-do-not-override-pr0fja).ant-typography,
+:where(.css-dev-only-do-not-override-pr0fja).ant-typography p {
+  margin-bottom: 0.2rem;
+} */

@@ -1,0 +1,282 @@
+.chatFloatButton {
+  position: fixed;
+  bottom: 20;
+  left: 20;
+}
+
+.chatPopup {
+  display: block;
+  width: 25vw;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 2%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-sizing: border-box;
+  z-index: 1000;
+  float: left;
+}
+
+.chatAvatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4%;
+  border-radius: 5px 5px 0 0;
+}
+
+.chatHeader {
+  cursor: move;
+}
+
+.closeIcon {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.chatObject {
+  padding: 0 4%;
+}
+
+.chatArea {
+  height: 22vw;
+  padding: 4%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.chatTextBox {
+  border: 1px solid #cccccc;
+  border-radius: 5px 5px 5px 0;
+  padding: 1px 3px;
+  margin-top: 2px;
+}
+
+.chatTextBoxSender {
+  border: 1px solid #118e44;
+  background-color: #e6ffe8;
+  border-radius: 5px 5px 0 5px;
+  padding: 1px 3px;
+  margin-top: 2px;
+}
+.chatTextBoxLive {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 1px 3px;
+  margin-top: 2px;
+}
+
+.chatQuestionBox {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 1px 3px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+span {
+  font-size: 14px;
+}
+
+.chatInput {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  padding: 4%;
+}
+
+.chatInputTextarea
+  textarea:where(.css-dev-only-do-not-override-pr0fja).ant-input {
+  resize: none;
+  padding: 8px 11px;
+}
+
+.chatFeedbackArea {
+  height: 24vw;
+  padding: 4%;
+  box-sizing: border-box;
+}
+
+/* List */
+
+.chatList {
+  height: 15vw;
+  overflow-y: scroll;
+  background-color: #e6ffe8;
+}
+
+.ant-list .ant-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 0;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.chatListItem {
+  cursor: pointer;
+}
+
+/* ScrollBar */
+
+.chatList::-webkit-scrollbar {
+  display: none;
+}
+
+.chatArea::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.chatArea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.chatArea::-webkit-scrollbar-thumb {
+  background-color: #cacaca;
+}
+
+/* Button */
+
+.submitButton {
+  margin-top: auto;
+  background-color: #118e44;
+}
+
+.messageButton,
+.askButton {
+  color: #fff;
+  background-color: #118e44;
+}
+
+.thumbUpButton,
+.thumbDownButton {
+  color: #fff;
+  background-color: #e0e0e0;
+}
+
+.askButton:not(:disabled):not(.ant-btn-disabled):hover,
+.submitButton:not(:disabled):not(.ant-btn-disabled):hover,
+.messageButton:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: #27ad51;
+}
+
+.cancelButton:not(:disabled):not(.ant-btn-disabled):hover {
+  border-color: #118e44;
+  color: #118e44;
+}
+
+.thumbUpButtonActive,
+.thumbUpButton:not(:disabled):not(.ant-btn-disabled):hover,
+.thumbUpButtonActive:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: #27ad51;
+}
+
+.thumbDownButtonActive,
+.thumbDownButton:not(:disabled):not(.ant-btn-disabled):hover,
+.thumbDownButtonActive:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: #ff1212;
+}
+
+.mainButtons {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.chatBottomButtons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  gap: 3%;
+  padding: 4% 0;
+}
+
+.reactionButtons {
+  padding: 4%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Typography */
+.chatTypography {
+  padding: 4%;
+}
+
+.ant-typography h5 {
+  margin: 0.2rem auto;
+}
+
+.ant-typography p {
+  margin-bottom: 0.2rem;
+}
+
+@media (max-width: 925px) {
+  .chatPopup {
+    width: 32vw;
+  }
+}
+
+@media (max-width: 725px) {
+  .chatPopup {
+    width: 42vw;
+  }
+  .chatArea {
+    height: 32vw;
+  }
+  .chatFeedbackArea {
+    height: 34vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .chatArea {
+    height: 32vw;
+  }
+  .chatFeedbackArea {
+    height: 34vw;
+  }
+}
+
+@media (max-width: 525px) {
+  .chatPopup {
+    width: 52vw;
+  }
+  .chatArea {
+    height: 42vw;
+  }
+  .chatFeedbackArea {
+    height: 44vw;
+  }
+  .chatList {
+    height: 40vw;
+  }
+}
+
+@media (max-width: 427px) {
+  .chatPopup {
+    width: 100%;
+  }
+  .chatList {
+    height: 40vw;
+  }
+  .chatArea {
+    height: 52vw;
+  }
+  .chatFeedbackArea {
+    height: 54vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .chatPopup {
+    width: 100%;
+  }
+  .chatList {
+    height: 50vw;
+  }
+  .chatArea {
+    height: 62vw;
+  }
+  .chatFeedbackArea {
+    height: 64vw;
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "notificationId": 1,
+    "status": "success",
+    "message": "Pdf Completed",
+    "dateTime": "2023-11-02 10:25:00",
+    "isMarkAsRead": true,
+    "path": "pdf",
+    "description": "The PDF processing was completed successfully."
+  },
+  {
+    "notificationId": 2,
+    "status": "error",
+    "message": "Pdf Failed",
+    "dateTime": "2023-11-02 10:34:12",
+    "isMarkAsRead": false,
+    "path": "pdf",
+    "description": "There was an error in processing the PDF."
+  },
+  {
+    "notificationId": 3,
+    "status": "info",
+    "message": "Appointment",
+    "dateTime": "2023-11-02 10:35:10",
+    "isMarkAsRead": false,
+    "path": "joinnow",
+    "description": "You have an upcoming appointment."
+  },
+  {
+    "notificationId": 4,
+    "status": "warning",
+    "message": "Doctor Prescription",
+    "dateTime": "2023-11-02 10:35:10",
+    "isMarkAsRead": true,
+    "path": "prescription",
+    "description": "Your doctor has issued a prescription."
+  }
+]
